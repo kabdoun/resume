@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +14,21 @@
             padding: 40px 20px;
             background-color: #f9f9f9;
         }
-
         .container {
             background-color: #ffffff;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             color: #2c3e50;
             margin-top: 0;
         }
-
         h1 {
             font-size: 2.5em;
             margin-bottom: 5px;
             text-align: center;
         }
-
         h2 {
             font-size: 1.5em;
             border-bottom: 2px solid #3498db;
@@ -45,91 +37,79 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         h3 {
             font-size: 1.2em;
             margin-bottom: 5px;
             display: flex;
             justify-content: space-between;
         }
-
         .contact-info {
             text-align: center;
             margin-bottom: 30px;
             color: #7f8c8d;
             font-size: 0.95em;
         }
-
         .contact-info a {
             color: #3498db;
             text-decoration: none;
             margin: 0 10px;
         }
-
         .contact-info a:hover {
             text-decoration: underline;
         }
-
         .job-title {
-            font-style: italic;
-            color: #7f8c8d;
             margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
         }
-
+        .job-title span:first-child {
+            color: #2980b9;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .job-title span:last-child {
+            color: #7f8c8d;
+            font-style: italic;
+        }
         .job-company {
             font-weight: bold;
         }
-
         ul {
             padding-left: 20px;
             margin-top: 5px;
         }
-
         li {
             margin-bottom: 8px;
         }
-
         .skills-section p {
             margin: 5px 0;
         }
-
         .skills-section strong {
             color: #2c3e50;
         }
-
+        
         /* Mobile responsive adjustments */
         @media (max-width: 600px) {
-
-            h3,
-            .job-title {
+            h3, .job-title {
                 flex-direction: column;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
             <h1>Khaled Mohamed</h1>
             <div class="contact-info">
                 Senior Solutions Consultant | Toronto, CA<br>
-                <a href="mailto:khaledgcp@google.com">khaledgcp@google.com</a> | (416) 896-6592 |
+                <a href="mailto:khaledgcp@google.com">khaledgcp@google.com</a> | (416) 896-6592 | 
                 <a href="https://www.linkedin.com/in/khaledamohamed/" target="_blank">LinkedIn</a>
             </div>
         </header>
 
         <section>
             <h2>About Me</h2>
-            <p>Outcome-focused with 13+ years of experience bridging pre-sales validation and post-sales production
-                execution across Google Cloud and AWS. Currently governs and de-risks $xxx+ in AI ARR for one of GCP's
-                largest strategic accounts across Vertex AI Gemini serving, agentic/GKE architectures, and xxx GPU/TPU
-                fleet deliveries, partnering with Core Product and Engineering to resolve code and architecture-level
-                integration blockers to ensure long-term production viability. Previously at AWS, led upfront pre-sales
-                architecture, RFx, SOWs, and POC validations as a Solutions Architect, and owned enterprise post-sales
-                delivery as a Strategic TAM to accelerate adoption, consumption, and measurable customer ROI.</p>
+            <p>Outcome-focused with 13+ years of experience bridging pre-sales validation and post-sales production execution across Google Cloud and AWS. Currently governs and de-risks $xxx+ in AI ARR for one of GCP's largest strategic accounts across Vertex AI Gemini serving, agentic/GKE architectures, and xxx GPU/TPU fleet deliveries, partnering with Core Product and Engineering to resolve code and architecture-level integration blockers to ensure long-term production viability. Previously at AWS, led upfront pre-sales architecture, RFx, SOWs, and POC validations as a Solutions Architect, and owned enterprise post-sales delivery as a Strategic TAM to accelerate adoption, consumption, and measurable customer ROI.</p>
         </section>
 
         <section>
@@ -142,30 +122,12 @@
                     <span>Nov 2023 &ndash; Present</span>
                 </div>
                 <ul>
-                    <li><strong>Strategic AI Infrastructure Orchestration:</strong> Orchestrated end-to-end capacity
-                        delivery, and readiness of 200k+ AI accelerators across multiple generations of Cloud TPUs (v4,
-                        v5p, v6e Trillium, v7x Ironwood) and NVIDIA GPUs (A100, H100, B200, GB200), aligning Compute,
-                        GKE, Networking, and Storage engineering to unblock 12 Tbps training pipelines, automate
-                        bare-metal maintenance gating, and protect 9 figure annual cloud commitments.</li>
-                    <li><strong>Enterprise GenAI Serving & Agentic Architecture:</strong> Steered production readiness,
-                        GSU capacity architecture, and P99.9 latency governance for flagship GenAI workloads (~9 figure
-                        ARR serving 2.5B devices on fine-tuned Vertex AI Gemini models), partnering with Product, Vertex
-                        SRE, and Model Server Engineering to optimize model fine-tuning and shape P1 product roadmaps.
-                        Co-engineered proactive "Smoke Detector" alerting that cut incident detection time by 50%.</li>
-                    <li><strong>Core Product Influence & GPU Platform Engineering:</strong> Served as the primary
-                        trusted advisor between customer SREs and Core Engineering across 30K+ NVIDIA GPUs, translating
-                        hyperscale bottlenecks into permanent platform capabilities (native COS CephFS kernel modules,
-                        and Autoscaled Blue-Green upgrades) and reversing P0 enterprise churn. Architected a
-                        deterministic A4X (GB200) monitoring and sub-block maintenance-gating framework.</li>
-                    <li><strong>TPU Optimization & White-Glove Enablement:</strong> Sustained 85%+ TPU training goodput
-                        across 16K–32K multi-cell runs via Orbax checkpointing, monitoring and GCS Cache optimization.
-                        Authored the foundational "Single Source of Truth" TPU/GKE Playbook.</li>
-                    <li><strong>Global Program Leadership & Governance Frameworks:</strong> Led the strategic revamp of
-                        the Global TAM Experts Program. Authored the Synapse Executive Reporting Standard and drafted
-                        the Strategic TAM Proposal.</li>
-                    <li><strong>Technical Enablement & Thought Leadership:</strong> Scaled regional expertise by leading
-                        AMER-wide TPU/GPU upskilling. Led two PCSE certification cohorts and established standardized
-                        onboarding workflow docs.</li>
+                    <li><strong>Strategic AI Infrastructure Orchestration:</strong> Orchestrated end-to-end capacity delivery, and readiness of 200k+ AI accelerators across multiple generations of Cloud TPUs (v4, v5p, v6e Trillium, v7x Ironwood) and NVIDIA GPUs (A100, H100, B200, GB200), aligning Compute, GKE, Networking, and Storage engineering to unblock 12 Tbps training pipelines, automate bare-metal maintenance gating, and protect 9 figure annual cloud commitments.</li>
+                    <li><strong>Enterprise GenAI Serving & Agentic Architecture:</strong> Steered production readiness, GSU capacity architecture, and P99.9 latency governance for flagship GenAI workloads (~9 figure ARR serving 2.5B devices on fine-tuned Vertex AI Gemini models), partnering with Product, Vertex SRE, and Model Server Engineering to optimize model fine-tuning and shape P1 product roadmaps. Co-engineered proactive "Smoke Detector" alerting that cut incident detection time by 50%.</li>
+                    <li><strong>Core Product Influence & GPU Platform Engineering:</strong> Served as the primary trusted advisor between customer SREs and Core Engineering across 30K+ NVIDIA GPUs, translating hyperscale bottlenecks into permanent platform capabilities (native COS CephFS kernel modules, and Autoscaled Blue-Green upgrades) and reversing P0 enterprise churn. Architected a deterministic A4X (GB200) monitoring and sub-block maintenance-gating framework.</li>
+                    <li><strong>TPU Optimization & White-Glove Enablement:</strong> Sustained 85%+ TPU training goodput across 16K–32K multi-cell runs via Orbax checkpointing, monitoring and GCS Cache optimization. Authored the foundational "Single Source of Truth" TPU/GKE Playbook.</li>
+                    <li><strong>Global Program Leadership & Governance Frameworks:</strong> Led the strategic revamp of the Global TAM Experts Program. Authored the Synapse Executive Reporting Standard and drafted the Strategic TAM Proposal.</li>
+                    <li><strong>Technical Enablement & Thought Leadership:</strong> Scaled regional expertise by leading AMER-wide TPU/GPU upskilling. Led two PCSE certification cohorts and established standardized onboarding workflow docs.</li>
                 </ul>
             </div>
 
@@ -176,16 +138,10 @@
                     <span>Feb 2022 &ndash; Oct 2023</span>
                 </div>
                 <ul>
-                    <li><strong>Strategic Advisory & Pre-Sales Leadership:</strong> Served as a trusted advisor to
-                        customer technical leadership, aligning business objectives with AWS-tailored solutions and
-                        leading end-to-end pre-sales engagements.</li>
-                    <li><strong>Architectural Excellence & Best Practices:</strong> Designed resilient, secure cloud
-                        architectures by applying deep expertise across AWS Security, Compute, and Cloud Operations.
-                    </li>
-                    <li><strong>Ecosystem Partnership & Evangelism:</strong> Accelerated cloud adoption by collaborating
-                        with AWS partners, Training, and Product teams to deliver industry-specific solutions.</li>
-                    <li><strong>Thought Leadership & Knowledge Amplification:</strong> Scaled architectural knowledge by
-                        producing high-impact technical content and mentoring the Solution Architect community.</li>
+                    <li><strong>Strategic Advisory & Pre-Sales Leadership:</strong> Served as a trusted advisor to customer technical leadership, aligning business objectives with AWS-tailored solutions and leading end-to-end pre-sales engagements.</li>
+                    <li><strong>Architectural Excellence & Best Practices:</strong> Designed resilient, secure cloud architectures by applying deep expertise across AWS Security, Compute, and Cloud Operations.</li>
+                    <li><strong>Ecosystem Partnership & Evangelism:</strong> Accelerated cloud adoption by collaborating with AWS partners, Training, and Product teams to deliver industry-specific solutions.</li>
+                    <li><strong>Thought Leadership & Knowledge Amplification:</strong> Scaled architectural knowledge by producing high-impact technical content and mentoring the Solution Architect community.</li>
                 </ul>
             </div>
 
@@ -196,17 +152,13 @@
                     <span>Dec 2020 &ndash; Feb 2022</span>
                 </div>
                 <ul>
-                    <li><strong>Strategic Engagement:</strong> Drove engagements with technical leadership to align AWS
-                        adoption and work backward from business objectives.</li>
-                    <li><strong>Architectural Guidance & Cloud Governance:</strong> Served as primary technical advisor,
-                        delivering strategic architecture, POC validation, and best-practice recommendations.</li>
-                    <li><strong>Operational Excellence:</strong> Led operational reviews, performance analysis, and
-                        critical event support for migrations, launches, and peak events.</li>
-                    <li><strong>Enablement & Advocacy:</strong> Delivered Game Days, Immersion Days, and workshops to
-                        accelerate customer capabilities.</li>
+                    <li><strong>Strategic Engagement:</strong> Drove engagements with technical leadership to align AWS adoption and work backward from business objectives.</li>
+                    <li><strong>Architectural Guidance & Cloud Governance:</strong> Served as primary technical advisor, delivering strategic architecture, POC validation, and best-practice recommendations.</li>
+                    <li><strong>Operational Excellence:</strong> Led operational reviews, performance analysis, and critical event support for migrations, launches, and peak events.</li>
+                    <li><strong>Enablement & Advocacy:</strong> Delivered Game Days, Immersion Days, and workshops to accelerate customer capabilities.</li>
                 </ul>
             </div>
-
+            
             <div class="job">
                 <h3><span class="job-company">Amazon Web Services</span></h3>
                 <div class="job-title">
@@ -214,10 +166,8 @@
                     <span>Dec 2017 &ndash; Dec 2020</span>
                 </div>
                 <ul>
-                    <li>Served as a global SME for EC2-Windows/Linux, Directory Services, AWS Systems Manager, and
-                        Amazon Workspaces.</li>
-                    <li>Acted as an escalation point for cloud engineers to investigate high-severity, complex technical
-                        tickets.</li>
+                    <li>Served as a global SME for EC2-Windows/Linux, Directory Services, AWS Systems Manager, and Amazon Workspaces.</li>
+                    <li>Acted as an escalation point for cloud engineers to investigate high-severity, complex technical tickets.</li>
                 </ul>
             </div>
 
@@ -228,12 +178,9 @@
                     <span>Feb 2017 &ndash; Nov 2017</span>
                 </div>
                 <ul>
-                    <li>Delivered remote enterprise consulting and produced detailed HLD/LLD documentation for complex
-                        IT environments.</li>
-                    <li>Deployed large-scale VMware environments across 7 sites and managed 50+ Domain Controllers in
-                        dual-forest Active Directory.</li>
-                    <li>Improved service delivery with Ansible-based RHEL automation and scripting in PowerShell, Bash,
-                        and Python.</li>
+                    <li>Delivered remote enterprise consulting and produced detailed HLD/LLD documentation for complex IT environments.</li>
+                    <li>Deployed large-scale VMware environments across 7 sites and managed 50+ Domain Controllers in dual-forest Active Directory.</li>
+                    <li>Improved service delivery with Ansible-based RHEL automation and scripting in PowerShell, Bash, and Python.</li>
                 </ul>
             </div>
 
@@ -244,12 +191,9 @@
                     <span>Aug 2015 &ndash; Jan 2017</span>
                 </div>
                 <ul>
-                    <li>Designed and managed a hybrid environment integrating Azure/Office 365 with on-prem Active
-                        Directory.</li>
-                    <li>Sole administrator of an 11-DC forest; implemented ADFS for seamless SSO across multiple
-                        platforms.</li>
-                    <li>Managed Microsoft Exchange 2010 and core services including DHCP, RADIUS, and WSUS across 6
-                        regional sites.</li>
+                    <li>Designed and managed a hybrid environment integrating Azure/Office 365 with on-prem Active Directory.</li>
+                    <li>Sole administrator of an 11-DC forest; implemented ADFS for seamless SSO across multiple platforms.</li>
+                    <li>Managed Microsoft Exchange 2010 and core services including DHCP, RADIUS, and WSUS across 6 regional sites.</li>
                 </ul>
             </div>
         </section>
@@ -267,34 +211,23 @@
 
         <section class="skills-section">
             <h2>Skills & Expertise</h2>
-            <p><strong>Modernization & Delivery:</strong> Cloud Migration, Modernization (Refactoring), Event Driven &
-                Serverless (FaaS), Microservices Architecture.</p>
-            <p><strong>Gen AI & Agentic Systems Architecture:</strong> Vertex AI Gemini Serving, Agentic Orchestration
-                Frameworks (ADK 2.0, LangChain), Model Context Protocol (MCP), Fine-Tuning.</p>
-            <p><strong>AWS - Subject Matter Expert (SME):</strong> EC2-Windows/Linux, Directory Services (Active
-                Directory), System Manager, AWS Config, Amazon Workspaces, Control Tower (Landing Zone).</p>
+            <p><strong>Modernization & Delivery:</strong> Cloud Migration, Modernization (Refactoring), Event Driven & Serverless (FaaS), Microservices Architecture.</p>
+            <p><strong>Gen AI & Agentic Systems Architecture:</strong> Vertex AI Gemini Serving, Agentic Orchestration Frameworks (ADK 2.0, LangChain), Model Context Protocol (MCP), Fine-Tuning.</p>
+            <p><strong>AWS - Subject Matter Expert (SME):</strong> EC2-Windows/Linux, Directory Services (Active Directory), System Manager, AWS Config, Amazon Workspaces, Control Tower (Landing Zone).</p>
             <p><strong>Scripting Languages:</strong> PowerShell, Bash, Python.</p>
             <p><strong>Infrastructure as Code (IaC):</strong> CloudFormation, Ansible, AWS Developer tools, AWS CDK.</p>
-            <p><strong>Storage:</strong> Configuring Enterprise Storages (LUN Masking, Switch Fabric), Object Level
-                Storage (S3/GCS), Amazon FSx.</p>
-            <p><strong>Networking:</strong> Advanced TCP/IP Debugging, VPC Architecture, Hybrid Connectivity (VPN/DX),
-                DNS Management, IPAM.</p>
-            <p><strong>Identity & Access Management (IAM):</strong> RBAC, MFA, SSO & Federated Identity (SAML, OIDC),
-                Active Directory (Directory Service).</p>
-            <p><strong>Security:</strong> Encryption (KMS), Certificate Authority (PKI), Compliance (AWS Config, DLP,
-                Landing Zone).</p>
+            <p><strong>Storage:</strong> Configuring Enterprise Storages (LUN Masking, Switch Fabric), Object Level Storage (S3/GCS), Amazon FSx.</p>
+            <p><strong>Networking:</strong> Advanced TCP/IP Debugging, VPC Architecture, Hybrid Connectivity (VPN/DX), DNS Management, IPAM.</p>
+            <p><strong>Identity & Access Management (IAM):</strong> RBAC, MFA, SSO & Federated Identity (SAML, OIDC), Active Directory (Directory Service).</p>
+            <p><strong>Security:</strong> Encryption (KMS), Certificate Authority (PKI), Compliance (AWS Config, DLP, Landing Zone).</p>
         </section>
-
+        
         <section class="skills-section">
             <h2>Certifications</h2>
-            <p><strong>GCP:</strong> Professional Machine Learning Engineer, Professional Cloud Security Engineer,
-                Professional Cloud Architect</p>
-            <p><strong>AWS:</strong> Solutions Architect (Pro & Assoc), DevOps Engineer (Pro), Security (Specialty),
-                Data Analytics (Specialty), SysOps Admin (Assoc), Developer (Assoc)</p>
-            <p><strong>Other:</strong> VMware Certified Professional 6, IBM System Storage Storwize, Cisco CCNA, MCSA
-                (Windows Server 2012, 2008)</p>
+            <p><strong>GCP:</strong> Professional Machine Learning Engineer, Professional Cloud Security Engineer, Professional Cloud Architect</p>
+            <p><strong>AWS:</strong> Solutions Architect (Pro & Assoc), DevOps Engineer (Pro), Security (Specialty), Data Analytics (Specialty), SysOps Admin (Assoc), Developer (Assoc)</p>
+            <p><strong>Other:</strong> VMware Certified Professional 6, IBM System Storage Storwize, Cisco CCNA, MCSA (Windows Server 2012, 2008)</p>
         </section>
     </div>
 </body>
-
 </html>
